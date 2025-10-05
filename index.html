@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdi Ahmed Jimale</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+  <div id="wrapper">
+
+    <main id="main">
+      <header>
+        <span class="avatar">
+          <img src="profielfotofahad.jpg.JPEG" alt="Profielfoto van Abdi">
+        </span>
+        <h1>Abdi Ahmed Jimale</h1>
+        
+        <h2>
+          <a href="mailto:abdi@jimale.nl">E-mail</a>
+        </h2>
+      </header>
+
+      <ul class="icons">
+        <li>
+          <a href="http://jimale.nl" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="label">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer id="footer">
+      <ul class="copyright">
+        <li>&copy; <span id="year"></span> Abdi Ahmed Jimale</li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    // Remove preload state
+    window.addEventListener('load', () => {
+      document.body.classList.remove('is-preload');
+    });
+
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
